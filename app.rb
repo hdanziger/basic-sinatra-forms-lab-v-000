@@ -6,7 +6,8 @@ class App < Sinatra::Base
     erb :newteam
   end
 
-  get '/team' do
+  post '/team' do
+    @name = "Hannah"
     erb :team
   end
 
