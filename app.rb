@@ -7,14 +7,14 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @name = params[:name]
-    @coach = params[:coach]
-    @pg = params[:pg]
-    @sg = params[:sg]
-    @sf = params[:sf]
-    @pf = params[:pf]
-    @c = params[:c]
-    
+    "Team Name: #{params[:name]}"
+    "Coach: #{params[:coach]}"
+    "Point Guard: #{params[:pg}]"
+    "Shooting Guard: #{params[:sg]}"
+    "Small Forward: #{params[:sf]}"
+    "Power Forward: #{params[:pf]}"
+    "Center: #{params[:c]}"
+
     erb :team
   end
 
